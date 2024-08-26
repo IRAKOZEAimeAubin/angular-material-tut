@@ -1,0 +1,19 @@
+<div class="properties-panel">
+  <mat-tab-group class="tab-group">
+    <mat-tab label="Single Family Homes">
+      <app-property-card-list
+        [properties]="singleFamilyProperties()"
+      ></app-property-card-list>
+    </mat-tab>
+    <mat-tab label="Condos">
+      <app-property-card-list
+        [properties]="condoProperties()"
+      ></app-property-card-list>
+    </mat-tab>
+    <mat-tab label="Town Home Properties">
+      <app-property-card-list
+        [properties]="townHomeProperties()"
+      ></app-property-card-list>
+    </mat-tab>
+  </mat-tab-group>
+</div>

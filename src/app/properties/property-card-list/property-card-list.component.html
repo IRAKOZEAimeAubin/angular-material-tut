@@ -1,0 +1,16 @@
+<div class="property-cards-container">
+  @for(property of properties(); track property.zpid) {
+  <mat-card class="property-card">
+    <img
+      [src]="property.media.propertyPhotoLinks.highResolutionLink"
+      width="512"
+      height="341"
+      alt="Property Image"
+    />
+    <mat-card-content class="property-card-content">
+      <span class="price">{{ property.price.value | currency }}</span>
+      <span class="address">{{ property.address | addressPipe }}</span>
+    </mat-card-content>
+  </mat-card>
+  }
+</div>

@@ -1,0 +1,35 @@
+.property-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.property-card {
+    width: 512px;
+    overflow: hidden;
+}
+
+.property-card img{
+    aspect-ratio: 512/341;
+    object-fit: cover;
+}
+
+.property-card-content {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card-content .price {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.property-card-content .address {
+    font-size: .75rem;
+    color: #999999;
+}
