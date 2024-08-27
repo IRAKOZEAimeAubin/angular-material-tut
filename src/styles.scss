@@ -1,14 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
 @use '@angular/material' as mat;
+@use '../m3-theme.scss';
+
+@include mat.core();
 
 * {
     scrollbar-width: none;
     -ms-overflow-style: none;
+    font-optical-sizing: auto;
 }
 
 *::-webkit-scrollbar {
     display: none;
+}
+
+html {
+    @include mat.all-component-themes(m3-theme.$light-theme);
 }
 
 html,
